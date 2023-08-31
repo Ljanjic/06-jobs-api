@@ -328,7 +328,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const response = await fetch(`/api/v1/jobs/${e.target.dataset.id}`, {
               method: "DELETE",
               headers: {
-                "Content-Type": "application.json",
+                "Content-Type": "application/json",
                 Authorization: `Bearer ${token}`,
               },  
             });
